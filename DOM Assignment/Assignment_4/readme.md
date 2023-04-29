@@ -12,6 +12,9 @@
 ![image](https://user-images.githubusercontent.com/113786234/235302026-c1504ade-5f2b-4fa9-9ba7-a9d6d99c5d39.png)
 
 **Solution :**
+
+**Create script.js file**
+
 ``` JavaScript
 //Barbarian
 let barbarian = document.querySelector(".clash-card__unit-stats--barbarian")
