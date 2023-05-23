@@ -55,16 +55,19 @@ document.body.style.backgroundImage = "none"
 **The User has to open the hamburger menu.**
 
 ### After Update :
-
-
+![image](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/db39c637-9f06-4122-83af-f44f14e7b221)
 
 **Solution :**
 
 **Create script.js file**
 
-``Javasript
-
-
+```Javasript
+// Task 3
+let nav = document.querySelector(".navbar-toggler")
+nav.addEventListener("click", () => {
+    document.querySelector("#navbarTogglerDemo01").classList.toggle("collapse")
+})
+console.log(document.querySelector("#navbarTogglerDemo01").classList)
 ```
 
 
