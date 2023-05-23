@@ -1,6 +1,5 @@
 ## Task 1
-**
-The user has to add placeholder for input and output board**
+**The user has to add placeholder for input and output board**
 
 ### After Update :
 ![image](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/fd40bdb5-17a2-4383-b516-d7dee9d36b3b)
