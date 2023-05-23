@@ -2,11 +2,12 @@
 **The user has to add placeholder for input and output board**
 
 ### After Update :
-![image](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/fd40bdb5-17a2-4383-b516-d7dee9d36b3b)
+![image](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/4bc2f658-f834-4350-ba73-4d9b554782c7)
+
 
 **Solution :**
 
-**Create script.js file**
+**Create contact.js file**
 
 ```Javascript
 // User Output Board
