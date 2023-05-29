@@ -128,7 +128,7 @@ Q.43 Explain useEffect & Advantages of it
 
 Q.44 Explain Context Api and create a minor project on it
 - Create dashboard and with button on clicking on that change theme to dark and light
-- 
+
 Q.45 Explain useReducer and Its advantages.
 
 Q.46 build a Todo Web App Using React and useReducer Hook.
