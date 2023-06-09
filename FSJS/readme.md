@@ -1,6 +1,9 @@
 # ← HTML →
 
 Q.1 `<!DOCTYPE html>` is it a tag of html? If not, what is it and why do we use it?
+
+**Solution :**
+
 ```
 Yes, `<!DOCTYPE html>` is indeed a tag in HTML, but it is more accurately referred to as a document type declaration (DTD)
 rather than a tag. The `<!DOCTYPE html>` declaration is placed at the very beginning of an HTML document to specify the
