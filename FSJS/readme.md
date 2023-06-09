@@ -2,11 +2,12 @@
 
 Q.1 `<!DOCTYPE html>` is it a tag of html? If not, what is it and why do we use it?
 ```
-Yes, `<!DOCTYPE html>` is indeed a tag in HTML, but it is more accurately referred to as a document type declaration (DTD) rather
-than a tag. The `<!DOCTYPE html>` declaration is placed at the very beginning of an HTML document to specify the version of HTML 
-being used. The purpose of the document type declaration is to ensure that the HTML document is rendered correctly by web browsers.
-It helps the browser determine how to interpret and display the content. Different versions of HTML have different rules and
-features, so specifying the document type helps ensure compatibility and consistency across browsers.
+Yes, `<!DOCTYPE html>` is indeed a tag in HTML, but it is more accurately referred to as a document type declaration (DTD)
+rather than a tag. The `<!DOCTYPE html>` declaration is placed at the very beginning of an HTML document to specify the
+version of HTML being used. The purpose of the document type declaration is to ensure that the HTML document is
+rendered correctly by web browsers. It helps the browser determine how to interpret and display the content.
+Different versions of HTML have different rules and features, so specifying the document type helps ensure 
+compatibility and consistency across browsers.
 ```
 
 
