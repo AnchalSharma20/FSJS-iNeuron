@@ -16,7 +16,11 @@ across browsers.
 
 Q.2 Explain Semantic tags in html? And why do we need it?
 
+😃**Solution :**
+
 Q.3 Differentiate between HTML Tags and Elements?
+
+😃**Solution :**
 
 Q.4 Build Your Resume using HTML only.
 
@@ -27,12 +31,18 @@ Q.5 Write Html code so that it looks like the given image
 
 Q.6 What are some of the advantages of HTML5 over its previous versions?
 
+😃**Solution :**
+
 Q.7 Create a simple Music player using html only.
 
 Q.8 What is the difference between `<figure>` tag and `<img>` tag?
-  
+
+😃**Solution :**
+
 Q.9 What’s the difference between html tag and attribute and give example of some global attributes?
-  
+
+😃**Solution :**
+
 Q.10 Build Table which looks like the given image
 
 
@@ -44,19 +54,103 @@ Q.10 Build Table which looks like the given image
 
 Q.11 Whats Box Model in CSS & Which CSS Properties are part of it ?
 
+😃**Solution :**
+
 Q.12 What are the Different Types of Selectors in CSS & what are the advantages of them?
 
 Q.13 What is VW/VH & How its different from PX?
 
+😃**Solution :**
+
 Q.14 Whats difference between Inline, Inline Block and block ?
+
+😃**Solution :**
 
 Q.15 How is Border-box different from Content Box?
 
+😃**Solution :**
+
 Q.16 What’s z-index and How does it Function ?
+
+😃**Solution :**
+
 
 Q.17 What’s Grid & Flex and difference between them?
 
+😃**Solution :**
+
+
 Q.18 Difference between absolute and relative and sticky and fixed position explain with example.
+
+😃**Solution :**
+
+In CSS, positioning properties are used to control the layout and positioning of elements on a web page.
+
+Absolute Positioning (position: absolute):
+
+- Elements with position: absolute are positioned relative to their nearest positioned ancestor, or the initial containing block if there is no positioned ancestor.
+- When an element is positioned absolutely, it is taken out of the normal document flow and can overlap other elements.
+- You can use offset properties (top, right, bottom, left) to specify the exact position of the element.
+```Javascript
+.container {
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
+```
+
+Relative Positioning (position: relative):
+
+- Elements with position: relative are positioned relative to their normal position in the document flow.
+- When an element is positioned relatively, you can use offset properties like top, right, bottom, and left to move the element from its original position.
+- Other elements on the page will still occupy the space where the relatively positioned element would have been if it were not moved.
+
+```Javascript
+.container {
+  position: relative;
+}
+
+.box {
+  position: relative;
+  top: 20px;
+  left: 30px;
+}
+```
+
+Sticky Positioning (position: sticky):
+
+- Elements with position: sticky are positioned based on the user's scroll position.
+- A sticky element is initially positioned according to the normal flow of the document but becomes fixed (like position: fixed) once the user scrolls to a specific threshold (the "sticky" point)
+- The element will remain in its sticky position until it reaches the end of its parent container.
+
+```Javascript
+.container {
+  height: 800px; /* Add height to create a scrolling container */
+  overflow-y: scroll;
+}
+
+.sticky-element {
+  position: sticky;
+  top: 20px;
+}
+```
+Fixed Positioning (position: fixed):
+
+- Elements with position: fixed are positioned relative to the viewport, meaning they stay in the same position even if the page is scrolled.
+- Fixed elements are removed from the normal document flow and do not affect the positioning of other elements.
+- You can use offset properties (top, right, bottom, left) to specify the exact position of the element relative to the viewport.
+
+```Javascript
+.fixed-element {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+}
+```
 
 Q.19 Build Periodic Table as shown in the below image ![Screenshot 2023-05-25 at 14-28-53 Assessment Documents for Full Stack Web Development - FSJS2 0 Assignment pdf](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/cdb5e2a3-2529-46f3-8a8c-bf1ae140940a)
 
@@ -73,9 +167,56 @@ Q.22 Build Complete Homepage of Ineuron [Link](https://ineuron.ai/) with respons
 
 Q.23 What are Pseudo class in CSS & How its different From Pseudo Elements?
 
+😃**Solution :**
+
+In CSS, pseudo-classes and pseudo-elements are used to select and style specific parts of an element's content based on certain conditions or states. While both pseudo-classes and pseudo-elements enhance the styling capabilities of CSS, they have different purposes and target different parts of the element.
+
+**Pseudo-classes**: Pseudo-classes select elements based on a specific state or condition. They are preceded by a colon (:) and target elements based on user interactions, such as hovering over an element, clicking on it, or focusing on it. Pseudo-classes are used to change the style of an element in response to user actions or dynamic states.
+
+Here are some examples of commonly used pseudo-classes:
+
+:hover - Selects an element when the user hovers over it.
+:active - Selects an element while it is being clicked or activated.
+:focus - Selects an element that has keyboard focus.
+:first-child - Selects the first child element of its parent.
+:nth-child() - Selects elements based on their position within a parent element.
+    
+**Pseudo-elements**: Pseudo-elements, on the other hand, select and style specific parts of an element's content. They are preceded by two colons (::) and create virtual elements that can be styled independently. Pseudo-elements are used to add decorative or structural elements to the content of an element, such as inserting generated content before or after an element.
+
+Here are some examples of commonly used pseudo-elements:
+
+::before - Inserts content before the content of an element.
+::after - Inserts content after the content of an element.
+::first-letter - Selects the first letter of the text content within an element.
+::first-line - Selects the first line of the text content within an element.
+
+In summary, pseudo-classes are used to select elements based on states or conditions, while pseudo-elements are used to select and style specific parts of an element's content.
+
+
 # ← JavaScript →
 
 Q.24 What is Hoisting in Javascript ?
+
+😃**Solution :**
+
+Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during the compilation phase. This means that regardless of where the variables and functions are declared in the code, they are treated as if they are declared at the top of their scope.
+
+In JavaScript, there are two types of hoisting: variable hoisting and function hoisting.
+
+1. Variable Hoisting: When variables are hoisted, the declaration of the variable is moved to the top of its scope, but not the initialization. This means that you can access the variable before it is declared in the code, although its value will be undefined until it is assigned a value.
+```Javascript
+console.log(x); // undefined
+var x = 5;
+console.log(x); // 5
+```
+2. Function Hoisting: Function declarations are also hoisted to the top of their scope. This means that you can call a function before it is declared in the code.
+```Javascript
+greet(); // "Hello"
+
+function greet() {
+  console.log("Hello");
+}
+```
 
 Q.25 What are different higher order functions in JS? What is the difference between .map() and .forEach() ?
 
