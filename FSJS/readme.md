@@ -261,15 +261,31 @@ VW and VH are CSS units of measurement that represent a percentage of the viewpo
 
 😃**Solution :**
 
+##### Content Box:
+- box-sizing: content-box; is the default value for the box-sizing property.
+- With content-box, the width and height of an element are calculated by considering only the content area, excluding padding and border.
+- This means that if you set a width or height on an element, the padding and border will be added to the specified width and height, resulting in the total width and height being larger.
+- Example: If you set width: 200px on an element with 10px padding and 2px border, the total width of the element will be 200px (content width) + 20px (left and right padding) + 4px (left and right border), resulting in a total width of 224px.
+
+##### Border Box:
+- box-sizing: border-box; changes the box model behavior to include padding and border within the specified width and height of an element.
+- With border-box, the width and height you set on an element include both the content area and any padding and border.
+- This means that if you set a width or height on an element, the padding and border are subtracted from the specified width and height, ensuring that the content area remains the specified size.
+- Example: If you set width: 200px on an element with 10px padding and 2px border, the total width of the element will be 200px, including the content width, padding, and border.
+
 
 # Q.16 What’s z-index and How does it Function ?
 
 😃**Solution :**
 
+Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed ).
+
 
 # Q.17 What’s Grid & Flex and difference between them?
 
 😃**Solution :**
+
+The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
 
 
 # Q.18 Difference between absolute and relative and sticky and fixed position explain with example.
@@ -632,6 +648,28 @@ Here's an example project that demonstrates the use of debouncing in JavaScript:
 # Q.34 Explain Closures and Use cases of Closures.
 
 😃**Solution :**
+
+In JavaScript, a closure is a combination of a function and the lexical environment in which that function was declared. It allows a function to access variables and resources from its outer (enclosing) scope even after the outer function has finished executing. In simpler terms, a closure "remembers" the variables and context in which it was created.
+
+Closures are formed when an inner function is defined within an outer function and the inner function refers to variables from the outer function. The inner function retains a reference to the variables and scope of its outer function, even if the outer function has already returned.
+
+Here's an example to illustrate closures:
+```Javascript
+function outer() {
+  var outerVariable = 'Hello';
+
+  function inner() {
+    console.log(outerVariable);
+  }
+
+  return inner;
+}
+
+var closure = outer();
+closure(); // Output: Hello
+```
+
+Closures are frequently used in JavaScript for object data privacy, in event handlers and callback functions, and in partial applications, currying, and other functional programming patterns.
 
 
 # Q.35 Create a Blog web app using JavaScript
