@@ -157,21 +157,105 @@ Here are some examples of global attributes:
 
 😃**Solution :**
 
+The box model is a fundamental concept in CSS that describes how elements are structured and how their dimensions and spacing are calculated. It consists of four components: content, padding, border, and margin. Each component contributes to the overall size and layout of an element.
+- Content:
+```
+ Represents the actual content of an element, such as text, images, or other nested elements.
+ CSS property: width, height
+ ```
+- Padding:
+```
+Defines the space between the content and the border of an element.
+CSS properties: padding-top, padding-right, padding-bottom, padding-left, padding
+```
+- Border:
+```
+Surrounds the content and padding of an element.
+CSS properties: border-width, border-style, border-color, border
+```
+- Margin:
+```
+Creates space outside the border of an element, separating it from other elements.
+CSS properties: margin-top, margin-right, margin-bottom, margin-left, margin
+```
+
 
 # Q.12 What are the Different Types of Selectors in CSS & what are the advantages of them?
 
 😃**Solution :**
+
+[Different Types of Selectors](https://anchal20.hashnode.dev/css-selectors-and-pseudo-elements)
+
+##### CSS selectors offer several advantages:
+- Selectors allow you to target specific elements or groups of elements, enabling customized styling.
+- They provide flexibility, allowing you to apply styles to different parts of the document structure.
+- Selectors support cascading and specificity, allowing you to control the order and priority of styles applied to elements.
+- They enable the application of styles based on different states or conditions, enhancing interactivity and user experience.
+- Selectors can be combined and nested to create complex and specific targeting.
 
 
 # Q.13 What is VW/VH & How its different from PX?
 
 😃**Solution :**
 
+VW and VH are CSS units of measurement that represent a percentage of the viewport width and viewport height, respectively. They provide a way to size elements relative to the size of the viewport, which is the visible area of a web page.
+##### Viewport Width (VW):
+```
+        VW represents a percentage of the width of the viewport.
+        1 VW is equal to 1% of the viewport width.
+        Example: width: 50vw; means the element's width will be 50% of the viewport width.
+        Use case: VW is often used for creating responsive designs where elements adjust their size based on the width of the viewport.
+```
+##### Viewport Height (VH):
+```
+        VH represents a percentage of the height of the viewport.
+        1 VH is equal to 1% of the viewport height.
+        Example: height: 80vh; means the element's height will be 80% of the viewport height.
+        Use case: VH is commonly used for full-height sections or elements that should occupy a specific percentage of the viewport height.
+```
+##### Pixels (PX):
+```
+        PX is an absolute unit of measurement that represents a fixed number of pixels.
+        1 PX is equal to one physical pixel on the screen.
+        Example: font-size: 16px; sets the element's font size to 16 pixels.
+        Use case: PX is useful for specifying precise dimensions and sizes that are not relative to the viewport size.
+```
+**Key differences between VW/VH and PX:**
+- Relative vs. Absolute: VW and VH are relative units that adjust their size based on the viewport dimensions, while PX is an absolute unit that represents a fixed number of pixels.
+- Responsiveness: VW and VH are commonly used for creating responsive designs that adapt to different screen sizes and devices. They allow elements to scale proportionally with the viewport. PX, on the other hand, doesn't respond to changes in the viewport size.
+- Viewport-based: VW and VH are viewport-based units, meaning their values are calculated relative to the viewport dimensions. PX, in contrast, is a fixed unit of measurement that remains constant regardless of the viewport.
+    
 
 # Q.14 Whats difference between Inline, Inline Block and block ?
 
 😃**Solution :**
 
+##### Inline:
+```
+        Elements with display: inline are rendered inline, meaning they flow within the text content and do not start on a new line.
+        Inline elements do not have a fixed width or height. Their dimensions are determined by their content.
+        Examples of inline elements include <span>, <a>, <strong>, and <em>.
+        Inline elements cannot have vertical margin or padding applied to them.
+        Inline elements do not create line breaks before or after them.
+        Inline elements can have padding and horizontal margin applied to them.
+```
+##### Inline-Block:
+```
+        Elements with display: inline-block are rendered inline but behave as block-level elements.
+        Inline-block elements flow within the text content, but they can have a defined width, height, margin, and padding.
+        Examples of inline-block elements include <input>, <button>, and <img>.
+        Inline-block elements do not start on a new line, but they can be positioned vertically using margin or padding.
+        Inline-block elements respect line breaks before or after them.
+```
+##### Block:
+```
+        Elements with display: block are rendered as block-level elements.
+        Block elements start on a new line and occupy the full width available by default, extending to the left and right edges of their parent container.
+        Block elements can have a defined width, height, margin, and padding.
+        Examples of block elements include <div>, <p>, <h1> to <h6>, and <section>.
+        Block elements create line breaks before and after them.
+        Block elements can have both vertical and horizontal margin and padding applied to them.
+ ```       
 
 # Q.15 How is Border-box different from Content Box?
 
@@ -416,6 +500,48 @@ So, the final output is "First", "Third", "Third", and then "Second".
 
 😃**Solution :**
 
+Promises are a feature in JavaScript that allow you to handle asynchronous operations in a more organized and readable way. They represent the eventual completion (or failure) of an asynchronous operation and allow you to chain callbacks or use async/await syntax to handle the result.
+
+A promise can be in one of three states:
+##### Pending: 
+This is the initial state of a promise. It means that the asynchronous operation associated with the promise is still in progress and the promise is neither fulfilled nor rejected.
+##### Fulfilled: 
+The promise transitions to the fulfilled state when the asynchronous operation completes successfully. It means that the promised value is available, and any associated callbacks registered with the then() method will be executed with the fulfillment value.
+##### Rejected: 
+The promise transitions to the rejected state if the asynchronous operation encounters an error or fails. It means that the promised value is not available due to an error, and any associated error handlers registered with the catch() or then() method will be executed with the rejection reason.
+
+Here's an example where we create a custom promise that simulates an asynchronous operation (a timeout) and resolves or rejects based on a condition:
+```Javascript
+// Custom promise example
+const delay = (milliseconds) => {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (milliseconds > 2000) {
+        reject("Timeout occurred");
+      } else {
+        resolve("Operation completed successfully");
+      }
+    }, milliseconds);
+  });
+};
+
+// Using the custom promise
+console.log("Before promise");
+
+delay(1500)
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  })
+  .finally(() => {
+    console.log("Promise complete");
+  });
+
+console.log("After promise");
+```
+
 
 # Q.31 What is ‘this’ keyword in JavaScript? explain with an example & create.
 
@@ -436,10 +562,71 @@ console.log(john.name); // Outputs "John"
 
 😃**Solution :**
 
+##### Event Loop: 
+The event loop is a mechanism in JavaScript that continuously checks for tasks and events in the environment, such as user interactions, timers, or network responses. Its main job is to ensure that the call stack is never empty and that tasks are executed in the correct order. The event loop consists of two main components: the callback queue and the microtask queue.
+##### Call Stack: 
+The call stack is a data structure that keeps track of the currently executing functions in JavaScript. It works on a "last in, first out" (LIFO) principle. When a function is called, it is pushed onto the call stack, and when a function completes its execution, it is popped off the stack. This allows JavaScript to keep track of the order in which functions are called and return to the appropriate point of execution.
+##### Callback Queue: 
+The callback queue, also known as the task queue, is a queue that holds callbacks and tasks to be executed. When an asynchronous task or event occurs, its associated callback function is placed in the callback queue. The event loop checks the callback queue and, if the call stack is empty, pops the callbacks from the queue and pushes them onto the call stack for execution.
+##### Microtask Queue: 
+The microtask queue, sometimes referred to as the promise queue, is a queue that holds microtasks. Microtasks are usually generated as a result of Promise resolutions or certain API methods like queueMicrotask(). Microtasks have higher priority than regular tasks (callbacks) and are executed before the event loop advances to the callback queue. This ensures that microtasks are processed before the rendering and user interactions occur, improving perceived performance and maintaining consistency.
+
 
 # Q.33 Explain Debouncing and Create a project where you are using Debouncing.
 
 😃**Solution :**
+
+Debouncing is a technique used in web development to control the frequency of a particular event, typically user input events like typing or scrolling. It helps in optimizing performance by reducing the number of times a function is executed during rapid or frequent events.
+
+In simple terms, debouncing involves delaying the execution of a function until a certain amount of time has passed since the last occurrence of the event. If the event occurs again within that time period, the timer is reset, and the function execution is delayed further.
+
+Here's an example project that demonstrates the use of debouncing in JavaScript:
+```Javascript
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debouncing Example</title>
+</head>
+<body>
+  <input type="text" id="search-input" placeholder="Search...">
+  <ul id="search-results"></ul>
+
+  <script>
+    // Debouncing function
+    function debounce(func, delay) {
+      let timeoutId;
+      
+      return function() {
+        clearTimeout(timeoutId);
+        
+        timeoutId = setTimeout(() => {
+          func.apply(this, arguments);
+        }, delay);
+      };
+    }
+
+    // Function to perform search operation
+    function performSearch(event) {
+      const searchTerm = event.target.value;
+      const searchResultsElement = document.getElementById('search-results');
+      
+      // Simulating an API call or heavy operation
+      // Here, we're simply appending the search term to the search results list
+      searchResultsElement.innerHTML += `<li>${searchTerm}</li>`;
+    }
+
+    // Get the search input element
+    const searchInput = document.getElementById('search-input');
+
+    // Debounce the performSearch function with a delay of 300 milliseconds
+    const debouncedSearch = debounce(performSearch, 300);
+
+    // Add event listener to the search input with debounced function
+    searchInput.addEventListener('input', debouncedSearch);
+  </script>
+</body>
+</html>
+```
 
 
 # Q.34 Explain Closures and Use cases of Closures.
@@ -462,15 +649,69 @@ console.log(john.name); // Outputs "John"
 
 😃**Solution :**
 
+ReactJS is lightweight, creating a JavaScript library that accelerates UI development with shortcut paths and reusable UI components. React JS can manage the view layer of all your front-end web applications and mobile apps.
+##### Advantage of ReactJS:
+- Easy to Learn and USe.
+- Creating Dynamic Web Applications Becomes Easier.
+- Reusable Components.
+- Performance Enhancement.
+- The Support of Handy Tools.
+- Known to be SEO Friendly.
+- The Benefit of Having JavaScript Library.
+- Scope for Testing the Codes.
+
 
 # Q.37 What's Virtual Dom in React & What are the advantages of it?
 
 😃**Solution :**
 
+The Virtual DOM (Document Object Model) is a concept in React that represents a virtual representation of the actual DOM. It is a lightweight copy of the real DOM that React uses to efficiently update and render components.
+
+In React, when a component's state or props change, React creates a new virtual DOM tree by applying the component's render method.
+
+##### The advantages of using the Virtual DOM in React are:
+- Performance Optimization: Updating the real DOM can be an expensive operation, especially when dealing with large and complex applications. The Virtual DOM allows React to perform efficient updates by minimizing the number of actual manipulations on the real DOM. React identifies the minimal set of changes needed and performs them in a batch, resulting in improved performance.
+- Simplified Programming Model: The Virtual DOM provides an abstraction layer that simplifies the programming model. Developers can focus on writing declarative components and let React handle the efficient rendering and updating of the virtual and real DOM. This abstraction allows for cleaner and more maintainable code.
+- Cross-platform Consistency: The Virtual DOM ensures consistent behavior across different platforms and browsers. React abstracts away the differences and inconsistencies in the underlying browser implementations of the DOM, providing a unified programming model. Developers can write code once and have it work consistently across various platforms.
+- Facilitates Reconciliation: The Virtual DOM makes it easier for React to perform reconciliation, which is the process of determining the minimal set of changes required to update the DOM. By comparing the previous and current virtual DOM trees, React can efficiently identify the differences and update only the necessary parts, minimizing the impact on performance.
+- Server-side Rendering: React's Virtual DOM is also beneficial for server-side rendering. With the ability to generate a virtual DOM representation of the component tree on the server, React can render the initial HTML on the server and send it to the client. This allows for faster initial page loads and improved SEO (Search Engine Optimization).
+
+```
+    Speed and performance boost.
+    Lightweight.
+    It is simple and clear.
+    Amazing diffing algorithm.
+    It can be used on other frameworks not just react.
+```
+
 
 # Q.38 Explain LifeCycle of React Components?
 
 😃**Solution :**
+
+In React, components have a lifecycle that consists of different phases and methods. These lifecycle methods allow you to perform specific actions at different points in a component's existence, from initialization to unmounting. The lifecycle of a React component can be divided into three main phases: Mounting, Updating, and Unmounting. Here's an overview of each phase and the corresponding lifecycle methods:
+
+#### Mounting Phase:
+- This phase occurs when a component is being created and inserted into the DOM.
+- Lifecycle methods involved: constructor(), static getDerivedStateFromProps(), render(), componentDidMount().
+- constructor(): This is the first method called when a component is created. It is used to initialize state and bind event handlers.
+- static getDerivedStateFromProps(): This method is invoked before rendering and allows a component to update its state based on changes in props.
+- render(): This method returns the JSX or elements to be rendered in the DOM.
+- componentDidMount(): This method is called after the component has been rendered and inserted into the DOM. It is often used for performing side effects, such as fetching data or setting up event listeners.
+
+#### Updating Phase:
+- This phase occurs when a component's props or state change, triggering a re-render.
+- Lifecycle methods involved: static getDerivedStateFromProps(), shouldComponentUpdate(), render(), getSnapshotBeforeUpdate(), componentDidUpdate().
+- static getDerivedStateFromProps(): This method is called again during the updating phase, allowing the component to update its state based on changes in props.
+- shouldComponentUpdate(): This method determines if the component should re-render or not. It is used to optimize performance by preventing unnecessary renders.
+- render(): This method returns the updated JSX or elements to be rendered.
+- getSnapshotBeforeUpdate(): This method is invoked right before changes are made to the DOM. It allows you to capture some information from the DOM before it is potentially updated.
+- componentDidUpdate(): This method is called after the component has been re-rendered and any changes in the DOM have been applied. It is often used for updating the DOM or performing additional side effects.
+
+#### Unmounting Phase:
+- This phase occurs when a component is being removed from the DOM.
+- Lifecycle method involved: componentWillUnmount().
+- componentWillUnmount(): This method is called right before a component is unmounted and removed from the DOM. It is used to clean up any resources, such as timers or event listeners, set up during the component's lifetime.
 
 
 # Q.39 Whats the difference between Functional Components and Class Components?
