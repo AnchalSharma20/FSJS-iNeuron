@@ -300,11 +300,9 @@ Q.51 Create a task manager where user can create tasks and see his task
 
 # ← Express →
 
-Q.52 Create a simple server using Express and connect with backend and create an endpoint
-“/post” which sends 20 posts.
+Q.52 Create a simple server using Express and connect with backend and create an endpoint “/post” which sends 20 posts.
 
-Q.53 Explain a middleware and create a middleware that checks is user authenticated or not
-then send data of post
+Q.53 Explain a middleware and create a middleware that checks is user authenticated or not then send data of post.
 
 Q.54 Create a backend for blog app, where user can perform crud operations
 - Add blog
@@ -314,14 +312,108 @@ Q.54 Create a backend for blog app, where user can perform crud operations
 
 Q.55 What is the difference between authentication and authorization?
 
+😃**Solution :**
+
+Authentication: Authentication is the process of verifying the identity of a user or entity attempting to access a system. It confirms that the user is who they claim to be. Authentication typically involves presenting credentials such as a username and password, biometric information, security tokens, or digital certificates to prove identity. The goal of authentication is to ensure that only legitimate users gain access to the system.
+
+Authorization: Authorization, on the other hand, is the process of granting or denying permissions and privileges to authenticated users. Once a user's identity has been established through authentication, authorization determines what actions or resources the user is allowed to access within the system. Authorization is based on predefined rules, access control lists (ACLs), or roles assigned to users. It ensures that authenticated users have appropriate rights and permissions to perform specific actions or access certain resources.
+
+Notes--> authentication is about verifying the identity of a user, while authorization is about determining what the user is allowed to do or access once their identity has been established.
+
 Q.56 What is he difference between common JS and EJS module?
 
+😃**Solution :**
+
+CommonJS (CJS):
+- CommonJS is a module system primarily used in server-side JavaScript environments, such as Node.js.
+- It uses the require() function to import modules and the module.exports or exports object to define the exports of a module.
+- CJS modules have a synchronous nature, where dependencies are resolved at runtime.
+
+```Javascript
+// greet.js
+const message = 'Hello, ';
+
+function greet(name) {
+  console.log(message + name);
+}
+
+module.exports = greet;
+```
+```Javascript
+// main.js
+const greet = require('./greet');
+
+greet('John'); // Output: Hello, John
+```
+EJS (ECMAScript Modules):
+- It uses import and export statements to handle module imports and exports.
+- EJS modules are asynchronous and have a static nature, where dependencies are resolved statically at the time of module loading.
+```Javascript
+// greet.js
+const message = 'Hello, ';
+
+export function greet(name) {
+  console.log(message + name);
+}
+
+```
+```Javascript
+// main.js
+import { greet } from './greet';
+
+greet('John'); // Output: Hello, John
+
+```
 Q.57 What is JWT and what we can achieve with that create a minor project with jwt
 - Login and sign up
 - Add authentication using jwt
 
 Q.58 What should we do with the password of a user before storing it into DB?
 
+😃**Solution :**
+
+When handling user passwords, it is essential to follow security best practices to protect sensitive information. Here are some recommended steps to handle user passwords before storing them in a database:
+- Hashing: Passwords should never be stored in plain text. Instead, they should be hashed using a strong cryptographic hashing algorithm, such as bcrypt, Argon2, or scrypt. Hashing is a one-way process that transforms the password into a fixed-length string of characters. The resulting hash cannot be reverse-engineered to obtain the original password.
+
+    Salt: To further enhance the security of hashed passwords, it is recommended to use a unique salt for each user. A salt is a random value that is added to the password before hashing. Salting helps prevent attacks such as rainbow table attacks, where precomputed hash values are compared against stored hashes.
+
+    Strong Hashing Algorithm: Choose a secure and widely accepted hashing algorithm, such as bcrypt or Argon2, which are specifically designed for password hashing. These algorithms incorporate features like adjustable work factor and memory hardness to protect against brute-force attacks.
+
+    Work Factor and Iterations: Configure the hashing algorithm with an appropriate work factor or iteration count. A higher work factor or iteration count increases the computational cost required to hash the password, making it more difficult for attackers to crack passwords using brute-force or dictionary attacks.
+
+    Server-Side Hashing: Perform password hashing on the server-side rather than on the client-side. This ensures that the plaintext password never leaves the server and reduces the risk of interception or tampering.
+
+    Secure Transport: When transmitting passwords over a network, use secure protocols such as HTTPS to encrypt the communication and prevent interception or eavesdropping.
+
+    Strong Access Controls: Protect the database that stores user passwords with strong access controls. Only authorized personnel should have access to the database.
 Q.59 Whats event loop in NodeJS?
 
+😃**Solution :**
+
+In Node.js, the event loop is a fundamental part of its runtime environment. It is responsible for handling asynchronous operations, such as I/O operations, timers, and callbacks, in an efficient and non-blocking manner.
+
+The event loop allows Node.js to handle multiple concurrent operations without getting blocked, which is crucial for building scalable and high-performance applications. It enables Node.js to handle a large number of concurrent connections efficiently.
+
+Let's go through an example to illustrate how the event loop works in Node.js.
+
+```Javascript
+console.log("Start");
+
+setTimeout(function() {
+  console.log("Callback 1");
+}, 2000);
+
+setTimeout(function() {
+  console.log("Callback 2");
+}, 1000);
+
+console.log("End");
+/*
+Output:
+Start
+End
+Callback 2
+Callback 1
+*/
+```
 Q.60 Create a Full Stack Ecommerce website with all major functionalities.
