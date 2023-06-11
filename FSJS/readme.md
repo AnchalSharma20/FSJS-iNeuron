@@ -348,6 +348,7 @@ greet('John'); // Output: Hello, John
 EJS (ECMAScript Modules):
 - It uses import and export statements to handle module imports and exports.
 - EJS modules are asynchronous and have a static nature, where dependencies are resolved statically at the time of module loading.
+- 
 ```Javascript
 // greet.js
 const message = 'Hello, ';
@@ -374,18 +375,15 @@ Q.58 What should we do with the password of a user before storing it into DB?
 
 When handling user passwords, it is essential to follow security best practices to protect sensitive information. Here are some recommended steps to handle user passwords before storing them in a database:
 - Hashing: Passwords should never be stored in plain text. Instead, they should be hashed using a strong cryptographic hashing algorithm, such as bcrypt, Argon2, or scrypt. Hashing is a one-way process that transforms the password into a fixed-length string of characters. The resulting hash cannot be reverse-engineered to obtain the original password.
+- Salt: To further enhance the security of hashed passwords, it is recommended to use a unique salt for each user. A salt is a random value that is added to the password before hashing. Salting helps prevent attacks such as rainbow table attacks, where precomputed hash values are compared against stored hashes.
+- Strong Hashing Algorithm: Choose a secure and widely accepted hashing algorithm, such as bcrypt or Argon2, which are specifically designed for password hashing. These algorithms incorporate features like adjustable work factor and memory hardness to protect against brute-force attacks.
+- Work Factor and Iterations: Configure the hashing algorithm with an appropriate work factor or iteration count. A higher work factor or iteration count increases the computational cost required to hash the password, making it more difficult for attackers to crack passwords using brute-force or dictionary attacks.
+- Server-Side Hashing: Perform password hashing on the server-side rather than on the client-side. This ensures that the plaintext password never leaves the server and reduces the risk of interception or tampering.
+- Secure Transport: When transmitting passwords over a network, use secure protocols such as HTTPS to encrypt the communication and prevent interception or eavesdropping.
+- Strong Access Controls: Protect the database that stores user passwords with strong access controls. Only authorized personnel should have access to the database.
 
-    Salt: To further enhance the security of hashed passwords, it is recommended to use a unique salt for each user. A salt is a random value that is added to the password before hashing. Salting helps prevent attacks such as rainbow table attacks, where precomputed hash values are compared against stored hashes.
+By following these practices, you can significantly enhance the security of user passwords and minimize the risk of unauthorized access to user accounts.
 
-    Strong Hashing Algorithm: Choose a secure and widely accepted hashing algorithm, such as bcrypt or Argon2, which are specifically designed for password hashing. These algorithms incorporate features like adjustable work factor and memory hardness to protect against brute-force attacks.
-
-    Work Factor and Iterations: Configure the hashing algorithm with an appropriate work factor or iteration count. A higher work factor or iteration count increases the computational cost required to hash the password, making it more difficult for attackers to crack passwords using brute-force or dictionary attacks.
-
-    Server-Side Hashing: Perform password hashing on the server-side rather than on the client-side. This ensures that the plaintext password never leaves the server and reduces the risk of interception or tampering.
-
-    Secure Transport: When transmitting passwords over a network, use secure protocols such as HTTPS to encrypt the communication and prevent interception or eavesdropping.
-
-    Strong Access Controls: Protect the database that stores user passwords with strong access controls. Only authorized personnel should have access to the database.
 Q.59 Whats event loop in NodeJS?
 
 😃**Solution :**
