@@ -444,20 +444,185 @@ function greet() {
 
 😃**Solution :**
 
+In JavaScript, higher-order functions are functions that can take other functions as arguments or return functions as results. They provide a way to abstract over actions, behaviors, or operations and can be used to write more concise and expressive code. Some common higher-order functions in JavaScript include map, forEach, filter, reduce, and sort.
+##### map: 
+The map function is used to transform elements in an array and create a new array with the same length. It applies a provided function to each element in the original array and returns an array of the results. The original array remains unchanged.
+```Javascript
+const numbers = [1, 2, 3, 4, 5];
+
+const doubledNumbers = numbers.map((num) => num * 2);
+// doubledNumbers: [2, 4, 6, 8, 10]
+```
+##### forEach: 
+The forEach function iterates over each element in an array and performs a specified action for each element. Unlike map, it doesn't create a new array; instead, it executes a callback function for each element of the array.
+```Javascript
+const numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach((num) => console.log(num));
+// Output: 1, 2, 3, 4, 5
+```
+
 
 # Q.26 What is the difference between .call() .apply() and .bind()? explain with an example.
 
 😃**Solution :**
+
+##### call(): 
+The call() method is used to invoke a function with a specified this value and arguments provided individually. It accepts the this context as the first argument, followed by the function arguments separated by commas.
+```Javascript
+const person = {
+  name: "John Doe",
+  sayHello: function() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+
+const anotherPerson = {
+  name: "Jane Smith"
+};
+
+person.sayHello.call(anotherPerson);
+// Output: Hello, Jane Smith!
+```
+##### apply(): 
+The apply() method is similar to call(), but it accepts arguments as an array or an array-like object. The first argument is still the this context, and the second argument is an array or an array-like object containing the function arguments.
+```Javascript
+const person = {
+  name: "John Doe",
+  sayHello: function(greeting) {
+    console.log(`${greeting}, ${this.name}!`);
+  }
+};
+
+const anotherPerson = {
+  name: "Jane Smith"
+};
+
+person.sayHello.apply(anotherPerson, ["Hi"]);
+// Output: Hi, Jane Smith!
+```
+
+##### bind(): 
+The bind() method creates a new function that, when called, has a specified this value and optional arguments. It returns a new function without invoking it immediately.
+```Javascript
+const person = {
+  name: "John Doe",
+  sayHello: function() {
+    console.log(`Hello, ${this.name}!`);
+  }
+};
+
+const anotherPerson = {
+  name: "Jane Smith"
+};
+
+const greet = person.sayHello.bind(anotherPerson);
+greet();
+// Output: Hello, Jane Smith!
+```
 
 
 # Q.27 Explain Event bubbling and Event Capturing in JavaScript with suitable examples.
 
 😃**Solution :**
 
+#### Event Bubbling:
+Event bubbling is the default behavior in most modern browsers. When an event occurs on an element nested within another element, the event first triggers on the innermost element and then propagates upward through its ancestors, triggering event handlers on each ancestor element in the DOM hierarchy.
+```Javascript
+<div id="outer">
+  <div id="inner">
+    <button id="button">Click Me</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("outer").addEventListener("click", function () {
+    console.log("Outer Div Clicked");
+  });
+
+  document.getElementById("inner").addEventListener("click", function () {
+    console.log("Inner Div Clicked");
+  });
+
+  document.getElementById("button").addEventListener("click", function () {
+    console.log("Button Clicked");
+  });
+</script>
+```
+When the button is clicked, the order of event execution is as follows:
+```
+    Button Clicked
+    Inner Div Clicked
+    Outer Div Clicked
+```
+
+#### Event Capturing:
+Event capturing is the opposite of event bubbling. It involves the event starting at the outermost element and propagating downward through the DOM hierarchy, triggering event handlers on each ancestor element, and finally reaching the target element.
+```Javascript
+<div id="outer">
+  <div id="inner">
+    <button id="button">Click Me</button>
+  </div>
+</div>
+
+<script>
+  document.getElementById("outer").addEventListener(
+    "click",
+    function () {
+      console.log("Outer Div Clicked");
+    },
+    true // 'true' enables event capturing
+  );
+
+  document.getElementById("inner").addEventListener(
+    "click",
+    function () {
+      console.log("Inner Div Clicked");
+    },
+    true
+  );
+
+  document.getElementById("button").addEventListener(
+    "click",
+    function () {
+      console.log("Button Clicked");
+    },
+    true
+  );
+</script>
+```
+When the button is clicked, the order of event execution is as follows:
+```
+    Outer Div Clicked
+    Inner Div Clicked
+    Button Clicked
+```
+
 
 # Q.28 What is function currying with example?
 
 😃**Solution :**
+
+Function currying is a technique in functional programming that involves transforming a function with multiple arguments into a sequence of functions, each taking a single argument. The curried function allows you to partially apply arguments and create more specialized functions.
+```Javascript
+// Non-curried function
+function add(a, b, c) {
+  return a + b + c;
+}
+
+console.log(add(2, 3, 4)); // Output: 9
+
+// Curried function
+function curryAdd(a) {
+  return function (b) {
+    return function (c) {
+      return a + b + c;
+    };
+  };
+}
+
+console.log(curryAdd(2)(3)(4)); // Output: 9
+```
 
 
 # Q.29 Explain execution context diagram of following code snippets, use white board to draw execution context diagram
