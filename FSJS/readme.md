@@ -28,10 +28,10 @@ By using semantic tags, you make your HTML code more meaningful, accessible, and
 
 😃**Solution :**
 
-HTML Tags:
+#### HTML Tags:
 HTML tags are used to define the structure and content of an HTML document. Tags are represented by angled brackets (< and >) and are placed around HTML elements. Tags are used to mark the beginning and end of an element, and they provide instructions to the web browser on how to interpret and render the content.
 
-HTML Elements:
+#### HTML Elements:
 HTML elements consist of both the HTML tags and the content between them. An HTML element is a complete unit that represents a specific part of a web page. It includes the opening tag, the closing tag, and the content within those tags.
 
 ```Javascript
@@ -46,15 +46,7 @@ Together, they form the complete paragraph element.
 */
 ```
 
-# Q.4 Build Your Resume using HTML only.
-
-
-# Q.5 Write Html code so that it looks like the given image 
-
-<img width="260" alt="html" src="https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/d98f5dae-ae38-473d-840d-477449e8336a">
-
-
-# Q.6 What are some of the advantages of HTML5 over its previous versions?
+# Q.4 What are some of the advantages of HTML5 over its previous versions?
 
 😃**Solution :**
 
@@ -78,19 +70,16 @@ HTML5 introduced various performance improvements, such as asynchronous script l
 HTML5 includes features specifically designed for mobile devices, such as the ability to handle touch events, geolocation, and device orientation. It provides a more consistent and optimized experience across different devices and screen sizes.
 
 
-# Q.7 Create a simple Music player using html only.
-
-
-# Q.8 What is the difference between `<figure>` tag and `<img>` tag?
+# Q.5 What is the difference between `<figure>` tag and `<img>` tag?
 
 😃**Solution :**
 
-##### `<img>` tag:
+#### `<img>` tag:
 The `<img>` tag is specifically used to embed an image into an HTML document. It is a self-closing tag that does not require a closing tag. The <img> tag is primarily responsible for displaying the image on the page.
 ```Javascript
 <img src="image.jpg" alt="Image description">
 ```
-##### `<figure>` tag:
+#### `<figure>` tag:
 The `<figure>` tag is used to group together and semantically associate a self-contained content block with an optional caption. It is typically used to encapsulate media content like images, illustrations, videos, audio, etc., along with their captions or explanations.
 ```Javascript
 <figure>
@@ -100,11 +89,11 @@ The `<figure>` tag is used to group together and semantically associate a self-c
 ```
 
 
-# Q.9 What’s the difference between html tag and attribute and give example of some global attributes?
+# Q.6 What’s the difference between html tag and attribute and give example of some global attributes?
 
 😃**Solution :**
 
-##### HTML Tags:
+#### HTML Tags:
 HTML tags are used to mark the beginning and end of an HTML element. They define the structure and semantics of the content within the element. Tags are represented by angled brackets (< and >) and are placed around HTML elements. Tags can be either opening tags or self-closing tags.
 
 Examples:
@@ -117,7 +106,7 @@ Examples:
 
 `<a>`: Represents an anchor or hyperlink element.
 
-##### HTML Attributes:
+#### HTML Attributes:
 HTML attributes provide additional information or properties to HTML elements. They are placed within the opening tag of an element and modify the behavior or appearance of the element. Attributes consist of a name and a value, separated by an equal sign (=). Multiple attributes can be added to an element, each separated by a space.
 
 Examples:
@@ -130,7 +119,7 @@ Examples:
 
 `href`: Specifies the destination URL for anchor elements.
 
-##### Global Attributes:
+#### Global Attributes:
 Global attributes are attributes that can be used on any HTML element. They are not specific to any particular element and can be applied universally. 
 
 Here are some examples of global attributes:
@@ -145,15 +134,10 @@ Here are some examples of global attributes:
 
 `lang`: Specifies the language of the content within an element.
 
-
-# Q.10 Build Table which looks like the given image
-![Screenshot 2023-05-25 at 14-35-51 2T7Y1 gif (GIF Image 472 × 278 pixels)](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/fcff3c94-e498-4377-bc45-ebc281bca4c1)
-
-  
   
 # ← CSS →
 
-# Q.11 Whats Box Model in CSS & Which CSS Properties are part of it ?
+# Q.1 Whats Box Model in CSS & Which CSS Properties are part of it ?
 
 😃**Solution :**
 
@@ -180,13 +164,13 @@ CSS properties: margin-top, margin-right, margin-bottom, margin-left, margin
 ```
 
 
-# Q.12 What are the Different Types of Selectors in CSS & what are the advantages of them?
+# Q.2 What are the Different Types of Selectors in CSS & what are the advantages of them?
 
 😃**Solution :**
 
 [Different Types of Selectors](https://anchal20.hashnode.dev/css-selectors-and-pseudo-elements)
 
-##### CSS selectors offer several advantages:
+#### CSS selectors offer several advantages:
 - Selectors allow you to target specific elements or groups of elements, enabling customized styling.
 - They provide flexibility, allowing you to apply styles to different parts of the document structure.
 - Selectors support cascading and specificity, allowing you to control the order and priority of styles applied to elements.
@@ -194,43 +178,43 @@ CSS properties: margin-top, margin-right, margin-bottom, margin-left, margin
 - Selectors can be combined and nested to create complex and specific targeting.
 
 
-# Q.13 What is VW/VH & How its different from PX?
+# Q.3 What is VW/VH & How its different from PX?
 
 😃**Solution :**
 
 VW and VH are CSS units of measurement that represent a percentage of the viewport width and viewport height, respectively. They provide a way to size elements relative to the size of the viewport, which is the visible area of a web page.
-##### Viewport Width (VW):
+#### Viewport Width (VW):
 ```
         VW represents a percentage of the width of the viewport.
         1 VW is equal to 1% of the viewport width.
         Example: width: 50vw; means the element's width will be 50% of the viewport width.
         Use case: VW is often used for creating responsive designs where elements adjust their size based on the width of the viewport.
 ```
-##### Viewport Height (VH):
+#### Viewport Height (VH):
 ```
         VH represents a percentage of the height of the viewport.
         1 VH is equal to 1% of the viewport height.
         Example: height: 80vh; means the element's height will be 80% of the viewport height.
         Use case: VH is commonly used for full-height sections or elements that should occupy a specific percentage of the viewport height.
 ```
-##### Pixels (PX):
+#### Pixels (PX):
 ```
         PX is an absolute unit of measurement that represents a fixed number of pixels.
         1 PX is equal to one physical pixel on the screen.
         Example: font-size: 16px; sets the element's font size to 16 pixels.
         Use case: PX is useful for specifying precise dimensions and sizes that are not relative to the viewport size.
 ```
-**Key differences between VW/VH and PX:**
+### Key differences between VW/VH and PX:
 - Relative vs. Absolute: VW and VH are relative units that adjust their size based on the viewport dimensions, while PX is an absolute unit that represents a fixed number of pixels.
 - Responsiveness: VW and VH are commonly used for creating responsive designs that adapt to different screen sizes and devices. They allow elements to scale proportionally with the viewport. PX, on the other hand, doesn't respond to changes in the viewport size.
 - Viewport-based: VW and VH are viewport-based units, meaning their values are calculated relative to the viewport dimensions. PX, in contrast, is a fixed unit of measurement that remains constant regardless of the viewport.
     
 
-# Q.14 Whats difference between Inline, Inline Block and block ?
+# Q.4 Whats difference between Inline, Inline Block and block ?
 
 😃**Solution :**
 
-##### Inline:
+#### Inline:
 ```
         Elements with display: inline are rendered inline, meaning they flow within the text content and do not start on a new line.
         Inline elements do not have a fixed width or height. Their dimensions are determined by their content.
@@ -239,7 +223,7 @@ VW and VH are CSS units of measurement that represent a percentage of the viewpo
         Inline elements do not create line breaks before or after them.
         Inline elements can have padding and horizontal margin applied to them.
 ```
-##### Inline-Block:
+#### Inline-Block:
 ```
         Elements with display: inline-block are rendered inline but behave as block-level elements.
         Inline-block elements flow within the text content, but they can have a defined width, height, margin, and padding.
@@ -247,7 +231,7 @@ VW and VH are CSS units of measurement that represent a percentage of the viewpo
         Inline-block elements do not start on a new line, but they can be positioned vertically using margin or padding.
         Inline-block elements respect line breaks before or after them.
 ```
-##### Block:
+#### Block:
 ```
         Elements with display: block are rendered as block-level elements.
         Block elements start on a new line and occupy the full width available by default, extending to the left and right edges of their parent container.
@@ -257,44 +241,44 @@ VW and VH are CSS units of measurement that represent a percentage of the viewpo
         Block elements can have both vertical and horizontal margin and padding applied to them.
  ```       
 
-# Q.15 How is Border-box different from Content Box?
+# Q.5 How is Border-box different from Content Box?
 
 😃**Solution :**
 
-##### Content Box:
+#### Content Box:
 - box-sizing: content-box; is the default value for the box-sizing property.
 - With content-box, the width and height of an element are calculated by considering only the content area, excluding padding and border.
 - This means that if you set a width or height on an element, the padding and border will be added to the specified width and height, resulting in the total width and height being larger.
 - Example: If you set width: 200px on an element with 10px padding and 2px border, the total width of the element will be 200px (content width) + 20px (left and right padding) + 4px (left and right border), resulting in a total width of 224px.
 
-##### Border Box:
+#### Border Box:
 - box-sizing: border-box; changes the box model behavior to include padding and border within the specified width and height of an element.
 - With border-box, the width and height you set on an element include both the content area and any padding and border.
 - This means that if you set a width or height on an element, the padding and border are subtracted from the specified width and height, ensuring that the content area remains the specified size.
 - Example: If you set width: 200px on an element with 10px padding and 2px border, the total width of the element will be 200px, including the content width, padding, and border.
 
 
-# Q.16 What’s z-index and How does it Function ?
+# Q.6 What’s z-index and How does it Function ?
 
 😃**Solution :**
 
 Z Index ( z-index ) is a CSS property that defines the order of overlapping HTML elements. Elements with a higher index will be placed on top of elements with a lower index. Note: Z index only works on positioned elements ( position:absolute , position:relative , or position:fixed ).
 
 
-# Q.17 What’s Grid & Flex and difference between them?
+# Q.7 What’s Grid & Flex and difference between them?
 
 😃**Solution :**
 
 The basic difference between CSS grid layout and CSS flexbox layout is that flexbox was designed for layout in one dimension - either a row or a column. Grid was designed for two-dimensional layout - rows, and columns at the same time.
 
 
-# Q.18 Difference between absolute and relative and sticky and fixed position explain with example.
+# Q.8 Difference between absolute and relative and sticky and fixed position explain with example.
 
 😃**Solution :**
 
 In CSS, positioning properties are used to control the layout and positioning of elements on a web page.
 
-### Absolute Positioning (position: absolute):
+#### Absolute Positioning (position: absolute):
 
 - Elements with position: absolute are positioned relative to their nearest positioned ancestor, or the initial containing block if there is no positioned ancestor.
 - When an element is positioned absolutely, it is taken out of the normal document flow and can overlap other elements.
@@ -311,7 +295,7 @@ In CSS, positioning properties are used to control the layout and positioning of
 }
 ```
 
-### Relative Positioning (position: relative):
+#### Relative Positioning (position: relative):
 
 - Elements with position: relative are positioned relative to their normal position in the document flow.
 - When an element is positioned relatively, you can use offset properties like top, right, bottom, and left to move the element from its original position.
@@ -329,7 +313,7 @@ In CSS, positioning properties are used to control the layout and positioning of
 }
 ```
 
-### Sticky Positioning (position: sticky):
+#### Sticky Positioning (position: sticky):
 
 - Elements with position: sticky are positioned based on the user's scroll position.
 - A sticky element is initially positioned according to the normal flow of the document but becomes fixed (like position: fixed) once the user scrolls to a specific threshold (the "sticky" point)
@@ -346,7 +330,7 @@ In CSS, positioning properties are used to control the layout and positioning of
   top: 20px;
 }
 ```
-### Fixed Positioning (position: fixed):
+#### Fixed Positioning (position: fixed):
 
 - Elements with position: fixed are positioned relative to the viewport, meaning they stay in the same position even if the page is scrolled.
 - Fixed elements are removed from the normal document flow and do not affect the positioning of other elements.
@@ -360,29 +344,14 @@ In CSS, positioning properties are used to control the layout and positioning of
 }
 ```
 
-
-# Q.19 Build Periodic Table as shown in the below image 
-![Screenshot 2023-05-25 at 14-28-53 Assessment Documents for Full Stack Web Development - FSJS2 0 Assignment pdf](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/cdb5e2a3-2529-46f3-8a8c-bf1ae140940a)
-
-
-# Q.20 Build given layout using grid or flex see below image for reference .
-![Screenshot 2023-05-25 at 14-38-26 Assessment Documents for Full Stack Web Development - FSJS2 0 Assignment pdf](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/48d163c6-ca1c-44e3-b924-85b89ca724ec)
-
-
-# Q.21 Build Responsive Layout both desktop and mobile and Tablet, see below image for reference ?
-![image](https://github.com/AnchalSharma20/FSJS-iNeuron/assets/113786234/4bed6137-0e6e-4f83-9d94-eb8f03c6aec9)
-
-
-# Q.22 Build Complete Homepage of Ineuron [Link](https://ineuron.ai/) with responsiveness.
-
-
-# Q.23 What are Pseudo class in CSS & How its different From Pseudo Elements?
+# Q.9 What are Pseudo class in CSS & How its different From Pseudo Elements?
 
 😃**Solution :**
 
 In CSS, pseudo-classes and pseudo-elements are used to select and style specific parts of an element's content based on certain conditions or states. While both pseudo-classes and pseudo-elements enhance the styling capabilities of CSS, they have different purposes and target different parts of the element.
 
-**Pseudo-classes**: Pseudo-classes select elements based on a specific state or condition. They are preceded by a colon (:) and target elements based on user interactions, such as hovering over an element, clicking on it, or focusing on it. Pseudo-classes are used to change the style of an element in response to user actions or dynamic states.
+#### Pseudo-classes : 
+Pseudo-classes select elements based on a specific state or condition. They are preceded by a colon (:) and target elements based on user interactions, such as hovering over an element, clicking on it, or focusing on it. Pseudo-classes are used to change the style of an element in response to user actions or dynamic states.
 
 Here are some examples of commonly used pseudo-classes:
 
@@ -396,7 +365,8 @@ Here are some examples of commonly used pseudo-classes:
 
 :nth-child() - Selects elements based on their position within a parent element.
     
-**Pseudo-elements**: Pseudo-elements, on the other hand, select and style specific parts of an element's content. They are preceded by two colons (::) and create virtual elements that can be styled independently. Pseudo-elements are used to add decorative or structural elements to the content of an element, such as inserting generated content before or after an element.
+#### Pseudo-elements : 
+Pseudo-elements, on the other hand, select and style specific parts of an element's content. They are preceded by two colons (::) and create virtual elements that can be styled independently. Pseudo-elements are used to add decorative or structural elements to the content of an element, such as inserting generated content before or after an element.
 
 Here are some examples of commonly used pseudo-elements:
 
@@ -414,7 +384,7 @@ In summary, pseudo-classes are used to select elements based on states or condit
 
 # ← JavaScript →
 
-# Q.24 What is Hoisting in Javascript ?
+# Q.1 What is Hoisting in Javascript ?
 
 😃**Solution :**
 
@@ -422,14 +392,14 @@ Hoisting is a behavior in JavaScript where variable and function declarations ar
 
 In JavaScript, there are two types of hoisting: variable hoisting and function hoisting.
 
-### 1. Variable Hoisting: 
+#### 1. Variable Hoisting: 
 When variables are hoisted, the declaration of the variable is moved to the top of its scope, but not the initialization. This means that you can access the variable before it is declared in the code, although its value will be undefined until it is assigned a value.
 ```Javascript
 console.log(x); // undefined
 var x = 5;
 console.log(x); // 5
 ```
-### 2. Function Hoisting: 
+#### 2. Function Hoisting: 
 Function declarations are also hoisted to the top of their scope. This means that you can call a function before it is declared in the code.
 ```Javascript
 greet(); // "Hello"
@@ -440,12 +410,12 @@ function greet() {
 ```
 
 
-# Q.25 What are different higher order functions in JS? What is the difference between .map() and .forEach() ?
+# Q.2 What are different higher order functions in JS? What is the difference between .map() and .forEach() ?
 
 😃**Solution :**
 
 In JavaScript, higher-order functions are functions that can take other functions as arguments or return functions as results. They provide a way to abstract over actions, behaviors, or operations and can be used to write more concise and expressive code. Some common higher-order functions in JavaScript include map, forEach, filter, reduce, and sort.
-##### map: 
+#### map: 
 The map function is used to transform elements in an array and create a new array with the same length. It applies a provided function to each element in the original array and returns an array of the results. The original array remains unchanged.
 ```Javascript
 const numbers = [1, 2, 3, 4, 5];
@@ -453,7 +423,7 @@ const numbers = [1, 2, 3, 4, 5];
 const doubledNumbers = numbers.map((num) => num * 2);
 // doubledNumbers: [2, 4, 6, 8, 10]
 ```
-##### forEach: 
+#### forEach: 
 The forEach function iterates over each element in an array and performs a specified action for each element. Unlike map, it doesn't create a new array; instead, it executes a callback function for each element of the array.
 ```Javascript
 const numbers = [1, 2, 3, 4, 5];
@@ -463,11 +433,11 @@ numbers.forEach((num) => console.log(num));
 ```
 
 
-# Q.26 What is the difference between .call() .apply() and .bind()? explain with an example.
+# Q.3 What is the difference between .call() .apply() and .bind()? explain with an example.
 
 😃**Solution :**
 
-##### call(): 
+#### call(): 
 The call() method is used to invoke a function with a specified this value and arguments provided individually. It accepts the this context as the first argument, followed by the function arguments separated by commas.
 ```Javascript
 const person = {
@@ -484,7 +454,7 @@ const anotherPerson = {
 person.sayHello.call(anotherPerson);
 // Output: Hello, Jane Smith!
 ```
-##### apply(): 
+#### apply(): 
 The apply() method is similar to call(), but it accepts arguments as an array or an array-like object. The first argument is still the this context, and the second argument is an array or an array-like object containing the function arguments.
 ```Javascript
 const person = {
@@ -502,7 +472,7 @@ person.sayHello.apply(anotherPerson, ["Hi"]);
 // Output: Hi, Jane Smith!
 ```
 
-##### bind(): 
+#### bind(): 
 The bind() method creates a new function that, when called, has a specified this value and optional arguments. It returns a new function without invoking it immediately.
 ```Javascript
 const person = {
@@ -522,7 +492,7 @@ greet();
 ```
 
 
-# Q.27 Explain Event bubbling and Event Capturing in JavaScript with suitable examples.
+# Q.4 Explain Event bubbling and Event Capturing in JavaScript with suitable examples.
 
 😃**Solution :**
 
@@ -599,7 +569,7 @@ When the button is clicked, the order of event execution is as follows:
 ```
 
 
-# Q.28 What is function currying with example?
+# Q.5 What is function currying with example?
 
 😃**Solution :**
 
@@ -625,7 +595,7 @@ console.log(curryAdd(2)(3)(4)); // Output: 9
 ```
 
 
-# Q.29 Explain execution context diagram of following code snippets, use white board to draw execution context diagram
+# Q.6 Explain execution context diagram of following code snippets, use white board to draw execution context diagram
 Code Snippet 1
 ```
 console.log('First');
@@ -677,18 +647,18 @@ Explanation:
 So, the final output is "First", "Third", "Third", and then "Second".
 
 
-# Q.30 What are promises? What are the different states of a promise? Support your answer with an example where you need to create your own promise.
+# Q.7 What are promises? What are the different states of a promise? Support your answer with an example where you need to create your own promise.
 
 😃**Solution :**
 
 Promises are a feature in JavaScript that allow you to handle asynchronous operations in a more organized and readable way. They represent the eventual completion (or failure) of an asynchronous operation and allow you to chain callbacks or use async/await syntax to handle the result.
 
 A promise can be in one of three states:
-##### Pending: 
+#### Pending: 
 This is the initial state of a promise. It means that the asynchronous operation associated with the promise is still in progress and the promise is neither fulfilled nor rejected.
-##### Fulfilled: 
+#### Fulfilled: 
 The promise transitions to the fulfilled state when the asynchronous operation completes successfully. It means that the promised value is available, and any associated callbacks registered with the then() method will be executed with the fulfillment value.
-##### Rejected: 
+#### Rejected: 
 The promise transitions to the rejected state if the asynchronous operation encounters an error or fails. It means that the promised value is not available due to an error, and any associated error handlers registered with the catch() or then() method will be executed with the rejection reason.
 
 Here's an example where we create a custom promise that simulates an asynchronous operation (a timeout) and resolves or rejects based on a condition:
@@ -724,7 +694,7 @@ console.log("After promise");
 ```
 
 
-# Q.31 What is ‘this’ keyword in JavaScript? explain with an example & create.
+# Q.8 What is ‘this’ keyword in JavaScript? explain with an example & create.
 
 😃**Solution :**
 
@@ -739,21 +709,21 @@ console.log(john.name); // Outputs "John"
 ```
 
 
-# Q.32 Explain event loop Call Stack Callback queue and Micro Task queue in Your Words.
+# Q.9 Explain event loop Call Stack Callback queue and Micro Task queue in Your Words.
 
 😃**Solution :**
 
-##### Event Loop: 
+#### Event Loop: 
 The event loop is a mechanism in JavaScript that continuously checks for tasks and events in the environment, such as user interactions, timers, or network responses. Its main job is to ensure that the call stack is never empty and that tasks are executed in the correct order. The event loop consists of two main components: the callback queue and the microtask queue.
-##### Call Stack: 
+#### Call Stack: 
 The call stack is a data structure that keeps track of the currently executing functions in JavaScript. It works on a "last in, first out" (LIFO) principle. When a function is called, it is pushed onto the call stack, and when a function completes its execution, it is popped off the stack. This allows JavaScript to keep track of the order in which functions are called and return to the appropriate point of execution.
-##### Callback Queue: 
+#### Callback Queue: 
 The callback queue, also known as the task queue, is a queue that holds callbacks and tasks to be executed. When an asynchronous task or event occurs, its associated callback function is placed in the callback queue. The event loop checks the callback queue and, if the call stack is empty, pops the callbacks from the queue and pushes them onto the call stack for execution.
-##### Microtask Queue: 
+#### Microtask Queue: 
 The microtask queue, sometimes referred to as the promise queue, is a queue that holds microtasks. Microtasks are usually generated as a result of Promise resolutions or certain API methods like queueMicrotask(). Microtasks have higher priority than regular tasks (callbacks) and are executed before the event loop advances to the callback queue. This ensures that microtasks are processed before the rendering and user interactions occur, improving perceived performance and maintaining consistency.
 
 
-# Q.33 Explain Debouncing and Create a project where you are using Debouncing.
+# Q.10 Explain Debouncing and Create a project where you are using Debouncing.
 
 😃**Solution :**
 
@@ -810,7 +780,7 @@ Here's an example project that demonstrates the use of debouncing in JavaScript:
 ```
 
 
-# Q.34 Explain Closures and Use cases of Closures.
+# Q.11 Explain Closures and Use cases of Closures.
 
 😃**Solution :**
 
@@ -837,23 +807,16 @@ closure(); // Output: Hello
 Closures are frequently used in JavaScript for object data privacy, in event handlers and callback functions, and in partial applications, currying, and other functional programming patterns.
 
 
-# Q.35 Create a Blog web app using JavaScript
-- Fetch data from https://jsonplaceholder.typicode.com/posts and show it to ui
-- User can also add new blog
-- Add Delete functionality also
-
-
-
 # ← React →
 
 
 
-# Q.36 What’s React and What are the advantages of it?
+# Q.1 What’s React and What are the advantages of it?
 
 😃**Solution :**
 
 ReactJS is lightweight, creating a JavaScript library that accelerates UI development with shortcut paths and reusable UI components. React JS can manage the view layer of all your front-end web applications and mobile apps.
-##### Advantage of ReactJS:
+### Advantage of ReactJS:
 - Easy to Learn and USe.
 - Creating Dynamic Web Applications Becomes Easier.
 - Reusable Components.
@@ -864,7 +827,7 @@ ReactJS is lightweight, creating a JavaScript library that accelerates UI develo
 - Scope for Testing the Codes.
 
 
-# Q.37 What's Virtual Dom in React & What are the advantages of it?
+# Q.2 What's Virtual Dom in React & What are the advantages of it?
 
 😃**Solution :**
 
@@ -872,7 +835,7 @@ The Virtual DOM (Document Object Model) is a concept in React that represents a 
 
 In React, when a component's state or props change, React creates a new virtual DOM tree by applying the component's render method.
 
-##### The advantages of using the Virtual DOM in React are:
+### The advantages of using the Virtual DOM in React are:
 - Performance Optimization: Updating the real DOM can be an expensive operation, especially when dealing with large and complex applications. The Virtual DOM allows React to perform efficient updates by minimizing the number of actual manipulations on the real DOM. React identifies the minimal set of changes needed and performs them in a batch, resulting in improved performance.
 - Simplified Programming Model: The Virtual DOM provides an abstraction layer that simplifies the programming model. Developers can focus on writing declarative components and let React handle the efficient rendering and updating of the virtual and real DOM. This abstraction allows for cleaner and more maintainable code.
 - Cross-platform Consistency: The Virtual DOM ensures consistent behavior across different platforms and browsers. React abstracts away the differences and inconsistencies in the underlying browser implementations of the DOM, providing a unified programming model. Developers can write code once and have it work consistently across various platforms.
@@ -888,7 +851,7 @@ In React, when a component's state or props change, React creates a new virtual 
 ```
 
 
-# Q.38 Explain LifeCycle of React Components?
+# Q.3 Explain LifeCycle of React Components?
 
 😃**Solution :**
 
@@ -917,7 +880,7 @@ In React, components have a lifecycle that consists of different phases and meth
 - componentWillUnmount(): This method is called right before a component is unmounted and removed from the DOM. It is used to clean up any resources, such as timers or event listeners, set up during the component's lifetime.
 
 
-# Q.39 Whats the difference between Functional Components and Class Components?
+# Q.4 Whats the difference between Functional Components and Class Components?
 
 😃**Solution :**
 
@@ -946,7 +909,7 @@ Class components can consume context using the this.context property or by wrapp
 Class components have been the traditional way of defining components in React and are still widely used in existing codebases. They provide compatibility with older versions of React and certain third-party libraries that rely on class components.
     
     
-# Q.40 What are the hooks in React & Can we use Hooks in Class Components?
+# Q.5 What are the hooks in React & Can we use Hooks in Class Components?
 
 😃**Solution :**
 
@@ -954,7 +917,7 @@ Hooks are a feature introduced in React 16.8 that allow you to use state and oth
 
 Hooks enable you to break down complex components into smaller, reusable functions that are easier to read, test, and maintain.
 
-#### Some commonly used React hooks include:
+### Some commonly used React hooks include:
 - useState: Allows functional components to manage local state.
 - useEffect: Enables performing side effects in functional components, such as data fetching, subscriptions, or modifying the DOM.
 - useContext: Provides access to a React context from within a functional component.
@@ -966,13 +929,13 @@ Hooks enable you to break down complex components into smaller, reusable functio
 Regarding the use of hooks in class components, hooks are designed specifically for functional components. They cannot be directly used in class components. However, if you have a class component and you want to use hooks functionality, you can consider using the react-hooks-helper library or converting the class component into a functional component using the function syntax.
 
 
-# Q.41 What are the LifeCycle method and the advantages of it?
+# Q.6 What are the LifeCycle method and the advantages of it?
 
 😃**Solution :**
 
 In React, lifecycle methods are special methods that are invoked at different stages of a component's lifecycle. They allow you to perform specific actions at key points in the lifecycle, such as when a component is mounted, updated, or unmounted. However, it's important to note that with the introduction of React Hooks, some lifecycle methods are being replaced by Hooks.
 
-#### Advantages of Lifecycle Methods:
+### Advantages of Lifecycle Methods:
 - Control over component behavior: Lifecycle methods give you control over what happens at each stage of a component's lifecycle. This allows you to perform initialization, cleanup, or additional logic as needed.
 - Optimization and performance: By using lifecycle methods effectively, you can optimize the rendering and updating process of components. For example, you can avoid unnecessary re-renders or perform conditional updates based on specific conditions.
 - Integration with external libraries and APIs: Lifecycle methods are often used to integrate with external libraries or APIs. For example, you can initialize and clean up subscriptions, set up event listeners, or interact with third-party JavaScript libraries.
@@ -980,7 +943,7 @@ In React, lifecycle methods are special methods that are invoked at different st
 - Side effects and asynchronous operations: Lifecycle methods provide opportunities to perform side effects, such as making AJAX requests, updating state asynchronously, or performing animations.
 
 
-# Q.42 What’s useState Hook & Advantages of it?
+# Q.7 What’s useState Hook & Advantages of it?
 
 😃**Solution :**
 
@@ -1007,7 +970,7 @@ const Counter = () => {
   );
 };
 ```
-#### Advantages of useState:
+### Advantages of useState:
 - Simplicity: useState simplifies state management in functional components by providing a straightforward API. It eliminates the need for class components and the complexities associated with them, making the code more concise and easier to understand.
 - Functional purity: With useState, state updates are done immutably, preserving the functional programming principle of immutability. The state update function provided by useState creates a new state value based on the previous state, ensuring that updates do not mutate the existing state directly.
 - Multiple state variables: Unlike the traditional this.state in class components, useState allows you to declare multiple independent state variables within a single component. You can call useState multiple times to manage different pieces of state within the same component, providing better organization and modularity.
@@ -1017,7 +980,7 @@ const Counter = () => {
 Overall, useState is a fundamental hook in React that enables functional components to manage state. It offers simplicity, functional purity, automatic re-rendering, and integration with other hooks, making state management in React more intuitive and efficient
 
 
-# Q.43 Explain useEffect & Advantages of it.
+# Q.8 Explain useEffect & Advantages of it.
 
 😃**Solution :**
 
@@ -1049,7 +1012,7 @@ const Timer = () => {
   return <div>Seconds: {seconds}</div>;
 };
 ```
-#### Advantages of useEffect:
+### Advantages of useEffect:
 - Separation of concerns: useEffect allows you to separate side effects from the main component logic. By encapsulating side effects within the effect function, you can keep your component code focused on rendering UI and managing state, improving code readability and maintainability.
 - Lifecycle management: useEffect covers the functionality of lifecycle methods in class components, such as componentDidMount, componentDidUpdate, and componentWillUnmount. You can handle side effects when the component mounts, updates, or unmounts by using the appropriate dependencies and cleanup functions.
 - Asynchronous operations: useEffect is capable of handling asynchronous operations within the effect function. You can make API calls, fetch data, or perform any other asynchronous tasks using promises or async/await syntax. This allows you to manage asynchronous logic and update the component state accordingly.
@@ -1059,11 +1022,8 @@ const Timer = () => {
 Overall, useEffect is a versatile and powerful hook in React that enables you to manage side effects, handle asynchronous operations, and control the lifecycle of functional components. It promotes clean code organization, encapsulation of side effects, and efficient rendering.
 
 
-# Q.44 Explain Context Api and create a minor project on it
-- Create dashboard and with button on clicking on that change theme to dark and light
 
-
-# Q.45 Explain useReducer and Its advantages.
+# Q.9 Explain useReducer and Its advantages.
 
 😃**Solution :**
 
@@ -1109,7 +1069,7 @@ const Counter = () => {
 };
 ```
 
-#### Advantages of useReducer:
+### Advantages of useReducer:
 - Simplified state management: useReducer is useful when managing complex state transitions. It allows you to handle state changes based on different actions in a single centralized reducer function, making the state management logic easier to understand and maintain.
 - Centralized logic: By using a reducer function, you can centralize all state transitions and side effects related to a specific piece of state. This improves code organization and reduces duplication of logic.
 - Predictable state updates: useReducer follows the same principles as the traditional reducer pattern, making state updates predictable. The reducer function takes the current state and an action and returns the new state, ensuring that updates are consistent and deterministic.
@@ -1119,71 +1079,42 @@ const Counter = () => {
 Overall, useReducer is a powerful hook that provides a structured and predictable approach to managing state in complex scenarios. It promotes code organization, reduces duplication, and improves maintainability of your React components.
 
 
-# Q.46 build a Todo Web App Using React and useReducer Hook.
-
-
-# Q.47 Build A simple counter app using React.
-
-
-# Q.48 Build Calculator Using React Only.
-
-
-# Q.49 Build a Tic Tac Toe Game using Class Component of React.
-
-
-# Q.50 Explain Prop Drilling & How can we avoid it?
+# Q.10 Explain Prop Drilling & How can we avoid it?
 
 😃**Solution :**
 
 Prop drilling occurs when a parent component passes data down to its children and then those children pass the same data down to their own children. This process can continue indefinitely. At the end, it's a long chain of component dependencies that can be difficult to manage and maintain.
 
-Prop drilling can lead to several issues:
+### Prop drilling can lead to several issues:
 - It adds unnecessary complexity and verbosity to the codebase.
 - It can make the code harder to understand and maintain as the number of components increases.
 - It tightly couples components together, making it difficult to modify or refactor them independently.
 
-To avoid prop drilling, you can employ a couple of techniques:
+### To avoid prop drilling, you can employ a couple of techniques:
 - Context API: The Context API in React allows you to create a shared state or data that can be accessed by multiple components without passing props explicitly. You can define a context at a higher level in the component tree and provide the required values to it. Then, the nested components can access these values without the need for prop drilling. Context API provides a way to avoid prop drilling by establishing a direct connection between the source of the data and the consuming components.
 - Redux or other state management libraries: Redux is a popular state management library for React applications. It allows you to centralize and manage the state of your application in a single store. By using Redux or similar libraries, you can store the required data in the global state and access it from any component in the application without the need for prop drilling.
     
-# Q.51 Create a task manager where user can create tasks and see his task
-- Redirect him to task dashboard section after login
-- Use https://reqres.in/ api to authenticate user and redirect him to task manager dashboard where he can see his task and create
-
 
 # ← Express →
 
-
-
-# Q.52 Create a simple server using Express and connect with backend and create an endpoint “/post” which sends 20 posts.
-
-
-# Q.53 Explain a middleware and create a middleware that checks is user authenticated or not then send data of post.
-
-
-# Q.54 Create a backend for blog app, where user can perform crud operations
-- Add blog
-- Delete blog
-- Update blog
-- Replace blog
-
-
-# Q.55 What is the difference between authentication and authorization?
+# Q.1 What is the difference between authentication and authorization?
 
 😃**Solution :**
 
-Authentication: Authentication is the process of verifying the identity of a user or entity attempting to access a system. It confirms that the user is who they claim to be. Authentication typically involves presenting credentials such as a username and password, biometric information, security tokens, or digital certificates to prove identity. The goal of authentication is to ensure that only legitimate users gain access to the system.
+#### Authentication: 
+Authentication is the process of verifying the identity of a user or entity attempting to access a system. It confirms that the user is who they claim to be. Authentication typically involves presenting credentials such as a username and password, biometric information, security tokens, or digital certificates to prove identity. The goal of authentication is to ensure that only legitimate users gain access to the system.
 
-Authorization: Authorization, on the other hand, is the process of granting or denying permissions and privileges to authenticated users. Once a user's identity has been established through authentication, authorization determines what actions or resources the user is allowed to access within the system. Authorization is based on predefined rules, access control lists (ACLs), or roles assigned to users. It ensures that authenticated users have appropriate rights and permissions to perform specific actions or access certain resources.
+#### Authorization: 
+Authorization, on the other hand, is the process of granting or denying permissions and privileges to authenticated users. Once a user's identity has been established through authentication, authorization determines what actions or resources the user is allowed to access within the system. Authorization is based on predefined rules, access control lists (ACLs), or roles assigned to users. It ensures that authenticated users have appropriate rights and permissions to perform specific actions or access certain resources.
 
 Notes--> authentication is about verifying the identity of a user, while authorization is about determining what the user is allowed to do or access once their identity has been established.
 
 
-# Q.56 What is he difference between common JS and EJS module?
+# Q.2 What is he difference between common JS and EJS module?
 
 😃**Solution :**
 
-CommonJS (CJS):
+#### CommonJS (CJS):
 - CommonJS is a module system primarily used in server-side JavaScript environments, such as Node.js.
 - It uses the require() function to import modules and the module.exports or exports object to define the exports of a module.
 - CJS modules have a synchronous nature, where dependencies are resolved at runtime.
@@ -1205,7 +1136,7 @@ const greet = require('./greet');
 greet('John'); // Output: Hello, John
 ```
 
-EJS (ECMAScript Modules):
+#### EJS (ECMAScript Modules):
 - It uses import and export statements to handle module imports and exports.
 - EJS modules are asynchronous and have a static nature, where dependencies are resolved statically at the time of module loading.
 
@@ -1226,12 +1157,7 @@ greet('John'); // Output: Hello, John
 ```
 
 
-# Q.57 What is JWT and what we can achieve with that create a minor project with jwt
-- Login and sign up
-- Add authentication using jwt
-
-
-# Q.58 What should we do with the password of a user before storing it into DB?
+# Q.3 What should we do with the password of a user before storing it into DB?
 
 😃**Solution :**
 
@@ -1247,7 +1173,7 @@ When handling user passwords, it is essential to follow security best practices 
 By following these practices, you can significantly enhance the security of user passwords and minimize the risk of unauthorized access to user accounts.
 
 
-# Q.59 Whats event loop in NodeJS?
+# Q.4 Whats event loop in NodeJS?
 
 😃**Solution :**
 
@@ -1277,6 +1203,3 @@ Callback 2
 Callback 1
 */
 ```
-
-
-# Q.60 Create a Full Stack Ecommerce website with all major functionalities.
